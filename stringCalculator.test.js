@@ -19,5 +19,9 @@ describe("stringCalculator",()=>{
     it("return sum of numbers with custom delimitters",()=>{
         expect(stringCalculator("//;\n1;2")).toBe(3);
     });
+    it("exception if negative number",()=>{
+        expect(()=>{stringCalculator("-1,3,4,5");}).toThrow('negatives not allowed - -1');
+    });
+
 
 });
