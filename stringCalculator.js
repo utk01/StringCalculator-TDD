@@ -1,6 +1,7 @@
 
 function stringCalculator(exp){
-    return (parseInt(exp)||0);
+    var numArray= exp.split(',');
+    return (parseInt(numArray[0])||0)+(parseInt(numArray[1])||0);
 }
 
 module.exports = stringCalculator;
