@@ -1,6 +1,6 @@
 
 function stringCalculator(exp){
-    return (0);
+    return (parseInt(exp)||0);
 }
 
 module.exports = stringCalculator;
