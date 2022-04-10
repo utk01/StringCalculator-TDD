@@ -10,5 +10,8 @@ describe("stringCalculator",()=>{
     it("if two comma seprated numbers in string return their sum",()=>{
         expect(stringCalculator("1,3")).toBe(4);
     });
+    it("return sum of any amount of comma seprated numbers",()=>{
+        expect(stringCalculator("1,3,7,8,11")).toBe(30);
+    });
 
 });
