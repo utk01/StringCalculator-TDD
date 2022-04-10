@@ -13,5 +13,8 @@ describe("stringCalculator",()=>{
     it("return sum of any amount of comma seprated numbers",()=>{
         expect(stringCalculator("1,3,7,8,11")).toBe(30);
     });
+    it("return sum of any amount of newline or comma seprated numbers",()=>{
+        expect(stringCalculator("1\n3,7\n8\n11")).toBe(30);
+    });
 
 });
