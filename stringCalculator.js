@@ -1,7 +1,7 @@
 
 function stringCalculator(exp){
-    var numArray= exp.split(',');
-    return (parseInt(numArray[0])||0)+(parseInt(numArray[1])||0);
+    var numArray= exp.split(',').map(Number);
+    return (parseInt(numArray.reduce((a,b)=>a+b)));
 }
 
 module.exports = stringCalculator;
